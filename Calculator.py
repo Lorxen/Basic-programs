@@ -23,18 +23,21 @@ def is_number(num):
     except ValueError:
         return False
 
-
+#Set parameters to start program
 operation = []
 result = 0
 exit = False
 next = ''
 inp = True
 
+#While not exit keep running
 while exit == False:
 
     n = input('Please enter an operation with +, -, * or / separate with spaces: ')
 
-    operation = n.split()
+#Split imput in number function number, then check if input is correct
+
+    operation = n.split() 
 
     if operation != [] and is_number(operation[0]) and is_number(operation[2]) and (operation[1] == '+' or operation[1] == '-' or operation[1] == '*' or operation[1] == '/'):
         operate = True
@@ -42,6 +45,8 @@ while exit == False:
     else: 
         operate = False
         print('NOT VALID INPUT')
+
+#While input is correct, apply the calculation
 
     while operate == True:
 
@@ -59,6 +64,8 @@ while exit == False:
         print(result)
         contin = True
 
+#Ask for continue, clear or exit
+
         while contin == True:
 
             next = input('(+  -  *  /)  CLEAR  EXIT : ').lower()
@@ -71,6 +78,8 @@ while exit == False:
             elif next == 'clear':
                 operate = False
                 contin = False
+
+#If not exit or clear, check if new operation input is valid
 
             else:
                 operation = next.split()
