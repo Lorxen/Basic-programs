@@ -1,3 +1,5 @@
+# Show a graphic of the information
+
 import matplotlib.pyplot as plt
 
 x1 = [2, 4, 5]

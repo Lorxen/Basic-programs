@@ -1,18 +1,17 @@
+# Mail sender with python
+
 from email.message import EmailMessage
 import ssl
 import smtplib
 
-email_sender = 'brianylucia@gmail.com'
-email_password = 'dbdnorwpoivndodu'
+email_sender = 'your_email@gmail.com'
+email_password = 'google_password'
 
-email_reciever = 'alissontorrez11@gmail.com'
+email_reciever = 'reciever_email@gmail.com'
 
-subject = 'CORREO ENVIADO MEDIANTE CODIGO A MI AMOR'
+subject = 'SUBJECT OF THE MAIL'
 body = '''
-Hola mi vida como estas? yo me encuentro escribiendo codigo con 
-dos manos y me soprende lo bien que me esta saliendo.
-
-Un beso guapetona!
+Body of the mail
 '''
 
 em = EmailMessage()

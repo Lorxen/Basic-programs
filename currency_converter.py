@@ -1,3 +1,5 @@
+# Simple currency converter
+
 def main():
 
     print('This program converts US dollars to pounds sterlins\n')
