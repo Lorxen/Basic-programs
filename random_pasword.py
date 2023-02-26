@@ -9,15 +9,17 @@ import random
 
 characters = list(string.ascii_letters + string.digits + '!@#$%^&*()')
 
+
 def generate_password():
 
     while True:
         try:
-            pas_len = int(input('\nHow long would you like your password to be? '))
+            pas_len = int(
+                input('\nHow long would you like your password to be? '))
             break
         except:
             print('\nNOT VALID INPUT')
-    
+
     pas = []
     random.shuffle(characters)
 
@@ -27,6 +29,7 @@ def generate_password():
     random.shuffle(pas)
     pasw = ''.join(pas)
     print('\n' + pasw + '\n')
+
 
 while True:
 

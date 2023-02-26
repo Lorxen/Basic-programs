@@ -10,7 +10,7 @@ r = requests.get(url)
 soup = BeautifulSoup(r.content, 'html.parser')
 
 # Sort the information you want
-title = soup.find_all('h2', {'class':'post-title'})
+title = soup.find_all('h2', {'class': 'post-title'})
 
 # Print the list of the information we are looking for
 for t in title:

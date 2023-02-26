@@ -8,8 +8,9 @@
 
 def binary_search():
 
+    # Create a list and ask to an input
     list = []
-    valors = input('Input a list of words or numbers separated by commas: ')
+    valors = input('Input a list of numbers separated by commas: ')
     list = valors.split(',')
     targ = input('Input a value in the list: ')
 
@@ -18,18 +19,21 @@ def binary_search():
     end = len(list)
     steps = 0
 
+    # If target not in list we are done
     if targ not in list:
         print('Value not in list')
     else:
 
+        # Loop while start of the list is less than the end
         while (start <= end):
 
+            # Print the step we are and the list we are looking this moment
             print(f'Step {steps}: ', str(list[start:end+1]))
             steps = steps + 1
             middle = (start + end) // 2
 
+            # If targ == middle we are done, else look first or second half of the list
             if targ == list[middle]:
-                print(f'Step {steps}: ', str(list[middle]))
                 print(f'Found in {middle+1} position')
                 start = end + 1
             elif targ < list[middle]:

@@ -1,6 +1,6 @@
-#collect email from user
-#split the email using the @, the first part as the user name the second part is gonna be saced as domain
-#spit domain using ., 
+# collect email from user
+# split the email using the @, the first part as the user name the second part is gonna be saced as domain
+# spit domain using .,
 
 def main():
 

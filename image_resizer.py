@@ -7,14 +7,17 @@
 from PIL import Image
 
 # Take two integers to resize the image selected
+
+
 def resize_image(size1, size2):
     image = Image.open('test.jpg')
 
     print(f'Current size : {image.size}')
 
-    resized_image = image.resize((size1,size2))
+    resized_image = image.resize((size1, size2))
 
     resized_image.save('resizedimage' + str(size1) + '.jpg')
+
 
 while True:
     # Input for the size desired
@@ -37,4 +40,4 @@ while True:
 
 print()
 # Call the function with int arguments
-resize_image(int(re[0]),int(re[1]))
+resize_image(int(re[0]), int(re[1]))
